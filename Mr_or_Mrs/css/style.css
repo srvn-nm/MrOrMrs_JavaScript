@@ -74,10 +74,11 @@ body{
   
   .bottom_center_heading {
     font-size: medium;
-    font-family: monospace;
-    font-weight: bold;
     font-family: Tahoma;
-    color: rgb(244, 217, 185);
+    font-weight: bold;
+    align-self: center;
+    color: rgb(86, 13, 17);
+    margin-bottom: auto;
   }
   
   .input_name_header{
