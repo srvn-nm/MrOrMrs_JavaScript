@@ -1,0 +1,130 @@
+body{
+    height: 100%;
+  }
+  
+  .main_background {
+    
+    /*background section*/
+    background-image: url("./asset/download.jpg");  /*background image form asset folder*/
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    /*alignments -> center in full screen mode*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .operation_card_element {
+  
+    /*these dimensions are set for test element*/
+    height: 40%;
+    width: 35%;
+  
+    /*items alignments -> center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  
+    /*centering the div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /*card view styles*/
+    border-radius: 1cap;
+    border: 1px solid rgb(218, 192, 163); /* solid nice border */
+    gap: 40px; /*gap will help us to set a space between our components*/
+    padding: 10px; /*padding form borders for inside components*/
+  
+    /*blur filtering and transparency*/
+    background: rgb(255, 221, 149,0.3); /* transparent feeling with this light blue color will happen*/
+    backdrop-filter: blur(10px); /* blur filter is the key for our background transparency view */
+   
+  }
+  
+  #error_element {
+    display: none;
+    border-radius: 1cap; 
+    background-color: rgb(244, 217, 185);
+  }
+  
+  #error_text{
+    font-size: medium;
+    font-weight: bold;
+    font-family: Tahoma;
+    color: rgb(131, 0, 0);
+    padding: 10px;
+  }
+  
+  
+  .top_heading {
+    font-size: medium;
+    font-weight: bold;
+    font-family: Tahoma;
+    color: rgb(16, 44, 87);
+    align-self: center;
+    margin-bottom: auto;
+  }
+  
+  .bottom_center_heading {
+    font-size: medium;
+    font-family: monospace;
+    font-weight: bold;
+    font-family: Tahoma;
+    color: rgb(244, 217, 185);
+  }
+  
+  .input_name_header{
+    font-size: medium;
+    font-family: Tahoma;
+    color: rgb(16, 44, 87);
+  }
+  
+  #name {
+    border: 1px dotted rgb(49, 6, 6); 
+    max-width: 100%;
+    width: 100%;
+    height: 2em; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 1cap;
+  }
+  
+  label{
+    font-size: medium;
+    font-family: Tahoma;
+    color: rgb(16, 44, 87);
+  }
+  
+  button{
+    background-color: rgb(218, 192, 163);
+    font-size: medium;
+    font-family: Tahoma;
+    color: rgb(49, 6, 6);
+    border: 1px dotted rgb(49, 6, 6);
+    border-radius: 1cap;
+    padding: 5px;
+  }
+  
+  p{
+    font-size:small;
+    font-family: Tahoma;
+    color: rgb(16, 44, 87);
+  }
+  
+  .saved-answer-element {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border: 1px dotted rgb(49, 6, 6);
+    padding: 10px;
+    border-radius: 1cap;
+  }
