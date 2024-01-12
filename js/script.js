@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
           alert("data is cleared");
           savedAnswer.innerHTML = "Saved Submits Area"
         }else{
-            alert("data is already cleared");
+            alert("data has been cleared.");
         }
     
       });
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     localStorage.setItem(userInputtedFormData.name, userInputtedFormData.gender);
                     alert("data is saved successfully");
                 }else{
-                    alert("sorry predictor won't recognize other characters");
+                    alert("predictor won't recognize other characters");
                 }
         
             }else{
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
                 if(!isCorrect){
-                    alert("sorry predictor won't recognize other characters");
+                    alert("predictor won't recognize other characters");
                     return;
                 }
         
@@ -119,21 +119,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (localStorage.getItem(userInputtedFormData.name)){
             savedAnswer.innerHTML = localStorage.getItem(userInputtedFormData.name);
         }else{
-            savedAnswer.innerHTML = "this data is new for predictor";
+            savedAnswer.innerHTML = "this data is new";
         }
       
         //now api calling is started here
         fetch(`${PREDICTOR_API_URL}${userInputtedFormData.name}`)
           .then((res) => res.json())
           .then((res) => {
-            //now we will get our response from our http req from server
-            //json form -> gender:Str , probability:Str
+            //getting response from http req from server
+            //json form gender:Str , probability:Str
             genderHeader.innerHTML = res.gender;
             genderPrediction.innerHTML = `${res.probability}`;
           }).catch((error) => {
             errorElement.style.display = "flex";
             errorText.innerHTML = error.message;
-            //ops! error is detected from network and http request or distension server
+            //error is detected from network and http request or distension server
             genderHeader.innerHTML = "Predicted Gender";
             genderPrediction.innerHTML = "Probability of the prediction";
             alert(error.message);
