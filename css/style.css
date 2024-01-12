@@ -38,20 +38,20 @@ body{
   
     /*card view styles*/
     border-radius: 1cap;
-    border: 1px solid rgb(218, 192, 163); /* solid nice border */
-    gap: 40px; /*gap will help us to set a space between our components*/
+    border: 1px dotted rgb(221, 197, 170); /* dotted nice border */
+    gap: 40px; /*gap will help us to set a space between components*/
     padding: 10px; /*padding form borders for inside components*/
   
     /*blur filtering and transparency*/
-    background: rgb(255, 221, 149,0.3); /* transparent feeling with this light blue color will happen*/
-    backdrop-filter: blur(10px); /* blur filter is the key for our background transparency view */
+    background: rgba(255, 221, 147, 0.3); /* transparent feeling with this light blue color will happen*/
+    backdrop-filter: blur(10px); /* blur filter is for background transparency view */
    
   }
   
   #error_element {
     display: none;
     border-radius: 1cap; 
-    background-color: rgb(244, 217, 185);
+    background-color: rgb(221, 197, 170);
   }
   
   #error_text{
@@ -67,7 +67,7 @@ body{
     font-size: medium;
     font-weight: bold;
     font-family: Tahoma;
-    color: rgb(16, 44, 87);
+    color: rgb(49, 6, 6);
     align-self: center;
     margin-bottom: auto;
   }
@@ -84,7 +84,7 @@ body{
   .input_name_header{
     font-size: medium;
     font-family: Tahoma;
-    color: rgb(16, 44, 87);
+    color: rgb(49, 6, 6);
   }
   
   #name {
@@ -101,7 +101,7 @@ body{
   label{
     font-size: medium;
     font-family: Tahoma;
-    color: rgb(16, 44, 87);
+    color: rgb(49, 6, 6);
   }
   
   button{
@@ -117,7 +117,7 @@ body{
   p{
     font-size:small;
     font-family: Tahoma;
-    color: rgb(16, 44, 87);
+    color: rgb(49, 6, 6);
   }
   
   .saved-answer-element {
