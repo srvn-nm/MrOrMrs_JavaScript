@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>Web Midterm project</title>
+</head>
+
+<body class="main_background">
+
+    <div id="error_element">
+        <p id="error_text"></p>
+    </div>
+
+    <div class="operation_card_view">
+
+        <div class="form_view">
+            <h1 class="top_heading"> Name-Gender Detector </h1>
+            <form id="form">
+
+                <div class="input-name">
+                    <p class="input_name_header"> Enter your name here: </p>
+                    <input type="text" id="name">
+                    
+                </div>
+
+                <br>
+
+                <div class="radio-group">
+                    <div class="radio-item">
+
+                        <input type="radio" id="option-male" name="radio-group" value="male">
+                        <label for="option1">Male</label>
+
+                        <input type="radio" id="option-female" name="radio-group" value="female">
+                        <label for="option2">Female</label>
+
+                    </div>
+                </div>
+
+                <br>
+
+                  <div class="button-group">
+                    <button class="btn" id="submit" type="submit">Submit</button>
+                    <button class="btn" id="save" type="button">Save</button>
+                  </div>
+
+              </form>
+            
+        </div>
+        
+        <div class="result_view">
+
+        <p id="gender-header">Predicted Gender</p>
+        <p id="gender-prediction">Probability of the prediction</p>
+        
+        <div class="saved-answer-area">
+          <p id="saved-answer">Saved Submits Area</p>
+          <button id="clear">Clear Last Submit</button>
+        </div>
+ 
+    </div>
+
+
+
+</div></body></html>
