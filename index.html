@@ -1,70 +1,83 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+    <!-- Set the character set to UTF-8 and configure viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Include external JavaScript file for functionality -->
     <script type="text/javascript" src="./js/script.js"></script>
+
+    <!-- Set the title of the webpage -->
     <title>Web Midterm 2 project</title>
 </head>
 
 <body class="main_background">
 
+    <!-- Error element container with hidden by default -->
     <div id="error_element">
         <p id="error_text"></p>
     </div>
 
+    <!-- Main container for the operation card -->
     <div class="operation_card_element">
 
+        <!-- Form element for name-gender prediction -->
         <div class="form_element">
             <h1 class="top_heading"> Name-Gender Predictor </h1>
+
+            <!-- Form with input for name and radio buttons for gender -->
             <form id="form">
 
+                <!-- Input field for entering the name -->
                 <div class="input-name">
                     <p class="input_name_header"> Enter your name here: </p>
                     <input type="text" id="name">
-                    
                 </div>
 
                 <br>
 
+                <!-- Radio group for selecting gender -->
                 <div class="radio-group">
                     <div class="radio-item">
-
                         <input type="radio" id="option-male" name="radio-group" value="male">
                         <label for="option1">Male</label>
 
                         <input type="radio" id="option-female" name="radio-group" value="female">
                         <label for="option2">Female</label>
-
                     </div>
                 </div>
 
                 <br>
 
-                  <div class="button-group">
+                <!-- Button group with submit and save buttons -->
+                <div class="button-group">
                     <button class="btn" id="submit" type="submit">Submit</button>
                     <button class="btn" id="save" type="button">Save</button>
-                  </div>
+                </div>
 
-              </form>
-            
+            </form>
         </div>
-        
+
+        <!-- Result element for displaying predicted gender and saved answers -->
         <div class="result_element">
-            <h3 class="bottom_center_heading">
-                Predictor
-           </h3>
+            <h3 class="bottom_center_heading"> Predictor </h3>
 
-        <p id="gender-header">Predicted Gender</p>
-        <p id="gender-prediction">Probability of the prediction</p>
-        
-        <div class="saved-answer-element">
-          <p id="saved-answer">Saved Submits Area</p>
-          <button id="clear">Clear</button>
+            <!-- Display predicted gender and probability -->
+            <p id="gender-header">Predicted Gender</p>
+            <p id="gender-prediction">Probability of the prediction</p>
+
+            <!-- Container for displaying saved answers and clear button -->
+            <div class="saved-answer-element">
+                <p id="saved-answer">Saved Submits Area</p>
+                <button id="clear">Clear</button>
+            </div>
         </div>
- 
+
     </div>
 
-
-
-</div></body></html>
+</body>
+</html>
